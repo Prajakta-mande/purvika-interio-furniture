@@ -1,5 +1,5 @@
 // import React from "react";
-import "./about.css";
+import "./About.css";
 import Client from "./client";
 import Testimonial from "./Testimonial";
 import CertificationSlider from "./CertificationSlider";
