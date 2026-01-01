@@ -1,0 +1,218 @@
+/* =========================
+   GALLERY SECTION
+========================= */
+
+.gallery-section {
+  padding: 80px 60px;
+  background-color: #ffffff;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+.subtitle {
+  font-size: larger;
+  color: #ff7a18;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+/* =========================
+   LEFT : IMAGE GALLERY
+========================= */
+
+.gallery-left {
+  flex: 1;
+}
+.div-left {
+  flex: 1;
+}
+
+/* Image Wrapper (About-style frame) */
+.gallery-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+  animation: fadeSlide 1.5s ease-in-out;
+}
+
+/* Main Image */
+.gallery-main-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* Hover zoom */
+.gallery-slider:hover .gallery-main-img {
+  transform: scale(1.06);
+}
+
+/* Corner borders like About */
+.gallery-slider::before,
+.gallery-slider::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 0 solid #ff7a18;
+  transition: all 0.8s ease;
+  z-index: 2;
+}
+
+.gallery-slider::before {
+  top: -1px;
+  left: -1px;
+  border-top: 6px solid #ff7a18;
+  border-left: 6px solid #ff7a18;
+}
+
+.gallery-slider::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 6px solid #ff7a18;
+  border-right: 6px solid #ff7a18;
+}
+
+.gallery-slider:hover::before,
+.gallery-slider:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  border: none;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.4s;
+  z-index: 3;
+}
+
+.nav-btn:hover {
+  background: #ff7a18;
+}
+
+.nav-btn.left {
+  left: 15px;
+}
+
+.nav-btn.right {
+  right: 15px;
+}
+/* RIGHT SIDE */
+
+/* Thumbnails */
+.theamColor
+{
+    color: #ff7a18;
+}
+.gallery-thumbs {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.thumb {
+  width: 75px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.6;
+  border-radius: 3px;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.thumb:hover,
+.thumb.active {
+  opacity: 1;
+  border-color: #ff7a18;
+  transform: translateY(-3px);
+}
+
+/* =========================
+   RIGHT : WHY CHOOSE US
+========================= */
+
+.div-right {
+  flex: 1.2;
+}
+.div-right h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.div-right h1 span {
+  font-weight: 300;
+}
+.gallery-right h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.gallery-right h2::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: #ff7a18;
+  display: block;
+  margin-top: 8px;
+}
+
+.gallery-right p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.gallery-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.gallery-right ul li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* =========================
+   ANIMATION (SAME AS ABOUT)
+========================= */
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .gallery-container {
+    flex-direction: column;
+  }
+
+  .gallery-main-img {
+    height: 300px;
+  }
+}

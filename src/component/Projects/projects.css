@@ -1,0 +1,148 @@
+.slider {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+  color: white;
+}
+
+.slide-overlay h1 {
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+.slide-overlay p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  max-width: 500px;
+}
+/* Arrow Buttons */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 32px;
+  padding: 12px 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: 20px;
+}
+
+.arrow.right {
+  right: 20px;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .slide-overlay {
+    padding-left: 30px;
+  }
+
+  .slide-overlay h1 {
+    font-size: 32px;
+  }
+
+  .slide-overlay p {
+    font-size: 16px;
+  }
+
+  .arrow {
+    font-size: 24px;
+    padding: 8px 12px;
+  }
+}
+
+.btn {
+  width: fit-content;
+  padding: 14px 30px;
+  background-color: #ff7a18;
+  border: none;
+  color: #555;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background-color: #ff7a18;
+  border: none;
+  color: #555;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* ********** projects ******** */
+
+
+.office-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  /* .div-right h1 {
+    font-size: 28px;
+  } */
+}
+
+
+
+/* ********** End of Projects********** */

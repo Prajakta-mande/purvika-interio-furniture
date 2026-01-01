@@ -1,0 +1,107 @@
+
+.clients-section {
+  padding: 70px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+
+.div-title {
+  font-size: 36px;
+  color: #ff7a18;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.clients-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #ff7a18;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 4px;
+}
+
+/* Slider */
+.clients-slider {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.clients-track {
+  display: flex;
+  gap: 30px;
+  animation: scrollClients 25s linear infinite;
+}
+
+/* Client Card */
+.client-card {
+  min-width: 180px;
+  height: 130px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: all 0.4s ease;
+  border-top: 4px solid #ff7a18;
+}
+
+.client-card img {
+  max-width: 120px;
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: all 0.4s ease;
+}
+
+/* Hover Effect */
+.client-card:hover {
+  transform: translateY(-10px);
+}
+
+.client-card:hover img {
+  filter: grayscale(0%);
+}
+
+/* Animation */
+@keyframes scrollClients {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on Hover */
+.clients-slider:hover .clients-track {
+  animation-play-state: paused;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .clients-title {
+    font-size: 26px;
+  }
+
+  .client-card {
+    min-width: 140px;
+    height: 110px;
+  }
+
+  .client-card img {
+    max-width: 90px;
+  }
+
+
+
+.div-right h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+}

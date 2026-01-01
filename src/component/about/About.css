@@ -1,0 +1,198 @@
+/* ************ About section******* */
+.about-section {
+  padding: 80px 60px;
+  background-color: #ffffff;
+}
+
+.about-container {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* LEFT SIDE */
+.about-left {
+  flex: 1;
+}
+
+.image-wrapper {
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  border-radius: 4px;
+  animation: fadeSlide 1.5s ease-in-out;
+}
+
+/* Image Animation */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.left-text {
+  margin-top: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.founder {
+  margin-top: 20px;
+  color: #555;
+}
+
+.founder span {
+  color: #ff7a18;
+}
+
+/* RIGHT SIDE */
+.div-right {
+  flex: 1.2;
+}
+
+.subtitle {
+  font-size: larger;
+  color: #ff7a18;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+
+.description {
+  color: #555;
+  line-height: 1.7;
+  font-size: 12px;
+  margin-bottom: 15px;
+  
+ }
+/*************** end of about section************* */
+/* ******************** our vision and our mission section********** */
+.vm-hero-section {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  background-image: url("https://images.unsplash.com/photo-1505691938895-1758d7feb511");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Dark Overlay */
+.vm-hero-bg {
+  background: rgba(0, 0, 0, 0.65)
+}
+
+/* Center Cards */
+.vm-overlay {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.vm-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Card */
+.vm-card {
+  flex: 1;
+  max-width: 340px;
+  background: #fff;
+  padding: 40px 25px 30px;
+  border-radius: 12px;
+  text-align: center;
+  border-top: 6px solid #ff7a18;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+  animation: fadeUp 1.2s ease;
+}
+
+/* Icon */
+.vm-icon {
+  width: 65px;
+  height: 65px;
+  background: #ff7a18;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -70px auto 20px;
+  font-size: 26px;
+}
+
+/* Text */
+.vm-card h2 {
+  color: #ff7a18;
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.vm-card p {
+  color: #444;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Hover */
+.vm-card:hover {
+  transform: translateY(-12px);
+  background: #ff7a18;
+}
+
+.vm-card:hover h2,
+.vm-card:hover p {
+  color: #fff;
+}
+
+.vm-card:hover .vm-icon {
+  background: #fff;
+  color: #ff7a18;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .vm-hero-section {
+    height: auto;
+    padding: 100px 0;
+  }
+
+  .vm-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vm-card {
+    max-width: 90%;
+  }
+}
+
+
+
+/* ******************** end of our vision and our mission section********** */

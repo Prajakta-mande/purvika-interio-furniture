@@ -1,0 +1,179 @@
+/* HEADER */
+.header {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* TOP BAR */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.brand img {
+  width: 70px;
+  max-width: 100%;
+}
+
+.logo-text h1 {
+  font-size: 28px;
+  color: #ff7a18;
+  margin: 0;
+}
+
+.logo-text p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.top-info {
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+}
+
+.top-info small {
+  color: #ff7a18;
+  font-weight: 600;
+}
+
+/* NAV BAR */
+.nav-bar {
+  background: #3f3f3f;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a,
+.nav-links span {
+  padding: 18px 22px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links span:hover {
+  background: #ff7a18;
+}
+
+/* DROPDOWN DESKTOP */
+.dropdown-menu {
+  position: absolute;
+  background: #fff;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  display: none;
+  z-index: 999;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  color: #333;
+  padding: 12px 18px;
+}
+
+/* BROCHURE */
+.brochure-btn {
+  margin-left: auto;
+  background: #ff7a18;
+  color: #fff;
+  padding: 18px 26px;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .top-info {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #333;
+    flex-direction: column;
+    width: 280px;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: none;
+    background: #222;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .dropdown-menu a {
+    color: #fff;
+    padding-left: 30px;
+  }
+
+  .brochure-btn {
+    display: none;
+  }
+}

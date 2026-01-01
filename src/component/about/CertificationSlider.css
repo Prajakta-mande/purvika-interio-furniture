@@ -1,0 +1,87 @@
+.certification-section {
+  padding: 80px 60px;
+  background: #fff;
+  text-align: center;
+}
+
+.cert-subtitle {
+  color: #ff7a18;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.cert-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.cert-title span {
+  font-weight: 300;
+}
+
+/* Slider */
+.cert-slider {
+  position: relative;
+  max-width: 900px;   /* BIG IMAGE WIDTH */
+  margin: 0 auto;
+}
+
+.cert-image-wrapper {
+  overflow: hidden;
+  border-radius: 6px;
+  border: 4px solid #ff7a18;
+}
+
+.cert-image-wrapper img {
+  width: 100%;
+  height: 500px;      /* BIG HEIGHT for clarity */
+  object-fit: contain; /* IMPORTANT for certificates */
+  background: #fff;
+}
+
+/* Arrows */
+.cert-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ff7a18;
+  color: #fff;
+  border: none;
+  font-size: 26px;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.cert-arrow.left {
+  left: -25px;
+}
+
+.cert-arrow.right {
+  right: -25px;
+}
+
+.cert-arrow:hover {
+  background: #e56810;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cert-title {
+    font-size: 28px;
+  }
+
+  .cert-image-wrapper img {
+    height: 360px;
+  }
+
+  .cert-arrow.left {
+    left: 5px;
+  }
+
+  .cert-arrow.right {
+    right: 5px;
+  }
+}
