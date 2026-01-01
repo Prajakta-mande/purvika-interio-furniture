@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Gallery.css";
-import { style } from "framer-motion/client";
+// import { style } from "framer-motion/client";
 
 const galleryImages = [
   "/images/gallery1.jpg",
