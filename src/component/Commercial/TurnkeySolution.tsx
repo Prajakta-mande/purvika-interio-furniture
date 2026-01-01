@@ -1,5 +1,5 @@
 import React from "react";
-import "./turnkeySolution.css";
+import "./TurnkeySolution.css";
 import { NavLink } from "react-router-dom";
 
 const ModularOfficeFurniture: React.FC = () => {
