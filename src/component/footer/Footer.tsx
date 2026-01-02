@@ -9,9 +9,9 @@ const Footer: React.FC = () => {
         <div className="footer-col">
           <h2 className="footer-logo">Purvika Interior</h2>
           <p>
-            Purvika Interior is driven by creativity, originality and
-            enthusiasm. We specialize in residential & commercial interior
-            solutions with quality and elegance.
+            Purvika Interio is driven by creativity, originality and enthusiasm.
+            We specialize in residential & commercial interior solutions with
+            quality and elegance.
           </p>
         </div>
 
@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
             ></i>
           </a>
           <a
-            href="https://www.instagram.com/purvikainterio?igsh=YXQ2cXl5NHd6NmYy"
+            href="https://www.instagram.com/purvika4835?igsh=MTR1MHZ0emZkNGE4ZA=="
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -114,6 +114,19 @@ const Footer: React.FC = () => {
                 color: "#ff7a18",
               }}
             ></i>
+          </a>
+          <a href="https://jsdl.in/DT-46U8YHH3QSP">
+            <img
+              src="/images/just-dial.avif"
+              alt="Justdial"
+              style={{
+                width: "22px",
+                height: "15px",
+                marginRight: "20px",
+                fontSize: "large",
+                color: "#ff7a18",
+              }}
+            />
           </a>
         </div>
       </div>
