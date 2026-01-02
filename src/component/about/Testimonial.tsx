@@ -3,6 +3,13 @@ import "./Testimonial.css";
 
 const testimonials = [
   {
+    message:
+      "Excellent quality furniture and on-time delivery. Truly impressed with the craftsmanship.",
+    name: "Rahul T.",
+    location: "Pune",
+    rating: 5,
+  },
+  {
     message: "Excellent quality furniture and timely delivery.",
     name: "Ravi K.",
     location: "Nashik",
@@ -15,7 +22,8 @@ const testimonials = [
     rating: 4,
   },
   {
-    message: "Best modular furniture manufacturer in Nashik.",
+    message:
+      "Strong build quality, premium finish, and great after-sales support.",
     name: "Sandeep M.",
     location: "Mumbai",
     rating: 5,
