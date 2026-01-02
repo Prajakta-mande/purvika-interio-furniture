@@ -8,9 +8,7 @@ const Header = () => {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
 
   useEffect(() => {
-    const onScroll = () => {
-      setSticky(window.scrollY > 80);
-    };
+    const onScroll = () => setSticky(window.scrollY > 80);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -56,7 +54,7 @@ const Header = () => {
 
         <ul className={`nav-links ${mobileOpen ? "open" : ""}`}>
           <li>
-            <NavLink to="/Home" onClick={closeMobileMenu}>
+            <NavLink to="/home" onClick={closeMobileMenu}>
               Home
             </NavLink>
           </li>
@@ -79,7 +77,7 @@ const Header = () => {
             >
               <li>
                 <NavLink
-                  to="/Commercial/modular-office-furniture"
+                  to="/commercial/modular-office-furniture"
                   onClick={closeMobileMenu}
                 >
                   Modular Office Furniture
@@ -87,7 +85,7 @@ const Header = () => {
               </li>
               <li>
                 <NavLink
-                  to="/Commercial/Institutional-office-furniture"
+                  to="/commercial/institutional-office-furniture"
                   onClick={closeMobileMenu}
                 >
                   Institutional
@@ -95,19 +93,19 @@ const Header = () => {
               </li>
               <li>
                 <NavLink
-                  to="/Commercial/Turnkey-Solution"
+                  to="/commercial/turnkey-solution"
                   onClick={closeMobileMenu}
                 >
                   Turnkey Solutions
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Commercial/Sofa" onClick={closeMobileMenu}>
+                <NavLink to="/commercial/sofa" onClick={closeMobileMenu}>
                   Sofa
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Commercial/Chair" onClick={closeMobileMenu}>
+                <NavLink to="/commercial/chair" onClick={closeMobileMenu}>
                   Chair
                 </NavLink>
               </li>
@@ -125,18 +123,21 @@ const Header = () => {
               }`}
             >
               <li>
-                <NavLink to="/Residential/LivingRoom" onClick={closeMobileMenu}>
+                <NavLink
+                  to="/residential/living-room"
+                  onClick={closeMobileMenu}
+                >
                   Living Room Interior
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Residential/Bedroom" onClick={closeMobileMenu}>
+                <NavLink to="/residential/bedroom" onClick={closeMobileMenu}>
                   Bedroom Interior
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/Residential/kitchenTrolley"
+                  to="/residential/kitchen-trolley"
                   onClick={closeMobileMenu}
                 >
                   Kitchen Trolleys
@@ -146,13 +147,13 @@ const Header = () => {
           </li>
 
           <li>
-            <NavLink to="/Projects/Projects" onClick={closeMobileMenu}>
+            <NavLink to="/projects" onClick={closeMobileMenu}>
               Projects
             </NavLink>
           </li>
 
           <li>
-            <NavLink to="/Contact/Contact" onClick={closeMobileMenu}>
+            <NavLink to="/contact" onClick={closeMobileMenu}>
               Contact
             </NavLink>
           </li>

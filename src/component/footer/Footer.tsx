@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* About */}
+        {/* ABOUT */}
         <div className="footer-col">
           <h2 className="footer-logo">Purvika Interio</h2>
           <p>
@@ -16,14 +16,14 @@ const Footer: React.FC = () => {
           </p>
         </div>
 
-        {/* Commercial Design */}
+        {/* COMMERCIAL DESIGN */}
         <div className="footer-col">
           <h3>Commercial Design</h3>
           <ul>
             <li>
               <Link
                 className="footer-li-submenu"
-                to="/Commercial/modular-office-furniture"
+                to="/commercial/modular-office-furniture"
               >
                 Modular Office Furniture
               </Link>
@@ -31,49 +31,50 @@ const Footer: React.FC = () => {
             <li>
               <Link
                 className="footer-li-submenu"
-                to="/Commercial/Institutional-office-furniture"
+                to="/commercial/institutional-office-furniture"
               >
                 Institutional Furniture
               </Link>
             </li>
             <li>
-              <Link className="footer-li-submenu" to="/Commercial/Chair">
+              <Link className="footer-li-submenu" to="/commercial/chair">
                 Chairs
               </Link>
             </li>
             <li>
-              <Link className="footer-li-submenu" to="/Commercial/Chair">
+              <Link className="footer-li-submenu" to="/commercial/sofa">
                 Sofa
               </Link>
             </li>
             <li>
               <Link
                 className="footer-li-submenu"
-                to="/Commercial/Turnkey-Solution"
-              ></Link>
-              Turnkey Solution
+                to="/commercial/turnkey-solution"
+              >
+                Turnkey Solution
+              </Link>
             </li>
           </ul>
         </div>
 
-        {/* Residential Design */}
+        {/* RESIDENTIAL DESIGN */}
         <div className="footer-col">
           <h3>Residential Design</h3>
           <ul>
             <li>
-              <Link className="footer-li-submenu" to="/Residential/LivingRoom">
+              <Link className="footer-li-submenu" to="/residential/living-room">
                 Living Room Interior
               </Link>
             </li>
             <li>
-              <Link className="footer-li-submenu" to="/Residential/Bedroom">
+              <Link className="footer-li-submenu" to="/residential/bedroom">
                 Bedroom Interior
               </Link>
             </li>
             <li>
               <Link
                 className="footer-li-submenu"
-                to="/Residential/kitchenTrolley"
+                to="/residential/kitchen-trolley"
               >
                 Kitchen Trolleys
               </Link>
@@ -81,7 +82,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        {/* Contact */}
+        {/* CONTACT */}
         <div className="footer-col">
           <h3>Contact Details</h3>
           <p>
@@ -103,76 +104,52 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div
-        className="footer-bottom social-icons"
-        style={{ alignItems: "center", gap: "10px" }}
-      >
-        <div>
-          © {new Date().getFullYear()} Purvika Interior. All Rights Reserved.
-          Developed by{" "}
-          <span style={{ marginRight: "20px" }}>Prajakta Mande</span>
-          {/* Social links */}
+      {/* BOTTOM BAR */}
+      <div className="footer-bottom social-icons">
+        <p>
+          © {new Date().getFullYear()} Purvika Interio. All Rights Reserved.
+          Developed by <span>Prajakta Mande</span>
+        </p>
+
+        {/* SOCIAL ICONS */}
+        <div className="footer-social">
           <a
             href="https://www.facebook.com/profile.php?id=100063935296560"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
           >
-            <i
-              className="fab fa-facebook-f"
-              style={{
-                marginRight: "20px",
-                fontSize: "large",
-                color: "#ff7a18",
-              }}
-            ></i>
+            <i className="fab fa-facebook-f"></i>
           </a>
+
           <a
-            href="https://www.instagram.com/purvika4835?igsh=MTR1MHZ0emZkNGE4ZA=="
+            href="https://www.instagram.com/purvika4835"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
           >
-            <i
-              className="fab fa-instagram"
-              style={{
-                marginRight: "20px",
-                fontSize: "large",
-                color: "#ff7a18",
-              }}
-            ></i>
+            <i className="fab fa-instagram"></i>
           </a>
+
           <a
-            href="https://www.linkedin.com/company/purvika-interio?trk=blended-typeahead"
+            href="https://www.linkedin.com/company/purvika-interio"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Linkedin"
+            aria-label="LinkedIn"
           >
-            <i
-              className="fab fa-linkedin"
-              style={{
-                marginRight: "20px",
-                fontSize: "large",
-                color: "#ff7a18",
-              }}
-            ></i>
+            <i className="fab fa-linkedin"></i>
           </a>
+
           <a
             href="https://jsdl.in/DT-46U8YHH3QSP"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Justdial"
           >
             <img
               src="/images/just-dial.avif"
               alt="Justdial"
-              style={{
-                width: "22px",
-                height: "15px",
-                marginRight: "20px",
-                fontSize: "large",
-                color: "#ff7a18",
-              }}
+              className="justdial-icon"
             />
           </a>
         </div>
