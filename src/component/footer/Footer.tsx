@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="footer-container">
         {/* About */}
         <div className="footer-col">
-          <h2 className="footer-logo">Purvika Interior</h2>
+          <h2 className="footer-logo">Purvika Interio</h2>
           <p>
             Purvika Interio is driven by creativity, originality and enthusiasm.
             We specialize in residential & commercial interior solutions with
