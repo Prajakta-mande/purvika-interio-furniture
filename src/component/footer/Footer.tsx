@@ -21,7 +21,8 @@ const Footer: React.FC = () => {
           <ul>
             <li>Modular Office Furniture</li>
             <li>Institutional Furniture</li>
-            <li>Chairs & Sofas</li>
+            <li>Chairs</li>
+            <li>Chair</li>
             <li>Turnkey Solution</li>
           </ul>
         </div>

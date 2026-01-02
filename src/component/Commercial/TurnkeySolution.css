@@ -29,10 +29,27 @@
     flex-direction: column;
   }
 
-  /* .div-right h1 {
+  .div-right h1 {
     font-size: 28px;
-  } */
+  }
 }
 
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+}
 
+.gallery-caption {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Theme hover effect */
+.gallery-card:hover .gallery-caption {
+  color: #ff7a18;
+}
 

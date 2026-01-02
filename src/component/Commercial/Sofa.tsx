@@ -11,7 +11,7 @@ const sofa: React.FC = () => {
         {/* LEFT IMAGE */}
         <div className="about-left">
           <div className="image-wrapper imghover">
-            <img src="/images/chairSofa/sofa4.png" alt="Sofa" />
+            <img src="/images/chairSofa/sofa4.png" alt="Sofa" loading="lazy" />
           </div>
         </div>
 
@@ -64,25 +64,29 @@ const sofa: React.FC = () => {
       <div className="office-gallery">
         <div className="gallery-card">
           <div className="gallery-item imghover">
-            <img src="/images/chairSofa/sofa1.jpg" alt="Modern Designer Sofa" />
+            <img
+              src="/images/chairSofa/sofa1.jpg"
+              alt="Modern Designer Sofa"
+              loading="lazy"
+            />
           </div>
           <p className="gallery-caption">office Sofa</p>
         </div>
         <div className="gallery-card">
           <div className="gallery-item imghover">
-            <img src="/images/chairSofa/sofa2.jpg" alt="Sofa" />
+            <img src="/images/chairSofa/sofa2.jpg" alt="Sofa" loading="lazy" />
           </div>
           <p className="gallery-caption">Modern Designer Sofa</p>
         </div>
         <div className="gallery-card">
           <div className="gallery-item imghover">
-            <img src="/images/chairSofa/sofa3.jpg" alt="Sofa" />
+            <img src="/images/chairSofa/sofa3.jpg" alt="Sofa" loading="lazy" />
           </div>
           <p className="gallery-caption">clasic Designer Sofa</p>
         </div>
         <div className="gallery-card">
           <div className="gallery-item imghover">
-            <img src="/images/chairSofa/sofa5.jpg" alt="Sofa" />
+            <img src="/images/chairSofa/sofa5.jpg" alt="Sofa" loading="lazy" />
           </div>
           <p className="gallery-caption">Modern Designer Sofa</p>
         </div>
@@ -90,25 +94,29 @@ const sofa: React.FC = () => {
       <div className="office-gallery">
         <div className="gallery-card">
           <div className="gallery-item imghover">
-            <img src="/images/chairSofa/sofa1.jpg" alt="Modern Designer Sofa" />
+            <img
+              src="/images/chairSofa/sofa1.jpg"
+              alt="Modern Designer Sofa"
+              loading="lazy"
+            />
           </div>
           <p className="gallery-caption">Modern Designer Sofa</p>
         </div>
         <div className="gallery-card">
           <div className="gallery-item imghover">
-            <img src="/images/chairSofa/sofa2.jpg" alt="Sofa" />
+            <img src="/images/chairSofa/sofa2.jpg" alt="Sofa" loading="lazy" />
           </div>
           <p className="gallery-caption">Modern Designer Sofa</p>
         </div>
         <div className="gallery-card">
           <div className="gallery-item imghover">
-            <img src="/images/chairSofa/sofa3.jpg" alt="Sofa" />
+            <img src="/images/chairSofa/sofa3.jpg" alt="Sofa" loading="lazy" />
           </div>
           <p className="gallery-caption">Modern Designer Sofa</p>
         </div>
         <div className="gallery-card">
           <div className="gallery-item imghover">
-            <img src="/images/chairSofa/sofa5.jpg" alt="Sofa" />
+            <img src="/images/chairSofa/sofa5.jpg" alt="Sofa" loading="lazy" />
           </div>
           <p className="gallery-caption">Modern Designer Sofa</p>
         </div>

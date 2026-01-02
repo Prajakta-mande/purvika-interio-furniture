@@ -8,14 +8,6 @@ const ModularOfficeFurniture: React.FC = () => {
       {/* ===== TOP SECTION ===== */}
       <div className="about-container">
         {/* LEFT IMAGE */}
-        <div className="about-left">
-          <div className="image-wrapper imghover">
-            <img
-              src="/images/OfficeFurniture/office1.jpg"
-              alt="Modular Office Furniture"
-            />
-          </div>
-        </div>
 
         {/* RIGHT CONTENT */}
         <div className="about-right">
@@ -80,7 +72,7 @@ const ModularOfficeFurniture: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/OfficeFurniture/office1.jpg"
+              src="/images/OfficeFurniture/office3.jpg"
               alt="Office Furniture 1"
             />
           </div>
