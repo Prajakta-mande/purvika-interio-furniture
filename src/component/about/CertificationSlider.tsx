@@ -3,8 +3,11 @@ import "./CertificationSlider.css";
 
 const certificates = [
   "/images/certificates/cert1.jpg",
-  "/images/certificates/cert1.jpg",
-  "/images/certificates/cert1.jpg",
+  "/images/certificates/cert2.jpg",
+  "/images/certificates/cert3.jpg",
+  "/images/certificates/cert4.jpg",
+  "/images/certificates/cert5.jpg",
+  "/images/certificates/cert6.jpg",
 ];
 
 const CertificationSlider: React.FC = () => {

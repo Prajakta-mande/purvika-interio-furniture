@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
@@ -19,11 +20,39 @@ const Footer: React.FC = () => {
         <div className="footer-col">
           <h3>Commercial Design</h3>
           <ul>
-            <li>Modular Office Furniture</li>
-            <li>Institutional Furniture</li>
-            <li>Chairs</li>
-            <li>Chair</li>
-            <li>Turnkey Solution</li>
+            <li>
+              <Link
+                className="footer-li-submenu"
+                to="/Commercial/modular-office-furniture"
+              >
+                Modular Office Furniture
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="footer-li-submenu"
+                to="/Commercial/Institutional-office-furniture"
+              >
+                Institutional Furniture
+              </Link>
+            </li>
+            <li>
+              <Link className="footer-li-submenu" to="/Commercial/Chair">
+                Chairs
+              </Link>
+            </li>
+            <li>
+              <Link className="footer-li-submenu" to="/Commercial/Chair">
+                Sofa
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="footer-li-submenu"
+                to="/Commercial/Turnkey-Solution"
+              ></Link>
+              Turnkey Solution
+            </li>
           </ul>
         </div>
 
@@ -31,10 +60,24 @@ const Footer: React.FC = () => {
         <div className="footer-col">
           <h3>Residential Design</h3>
           <ul>
-            <li>Bedroom Interior Design</li>
-            <li>Modular Kitchen</li>
-            <li>Chairs & Sofas</li>
-            <li>Turnkey Solution</li>
+            <li>
+              <Link className="footer-li-submenu" to="/Residential/LivingRoom">
+                Living Room Interior
+              </Link>
+            </li>
+            <li>
+              <Link className="footer-li-submenu" to="/Residential/Bedroom">
+                Bedroom Interior
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="footer-li-submenu"
+                to="/Residential/kitchenTrolley"
+              >
+                Kitchen Trolleys
+              </Link>
+            </li>
           </ul>
         </div>
 
