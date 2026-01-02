@@ -115,7 +115,11 @@ const Footer: React.FC = () => {
               }}
             ></i>
           </a>
-          <a href="https://jsdl.in/DT-46U8YHH3QSP">
+          <a
+            href="https://jsdl.in/DT-46U8YHH3QSP"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src="/images/just-dial.avif"
               alt="Justdial"
