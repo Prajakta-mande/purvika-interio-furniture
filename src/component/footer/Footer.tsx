@@ -14,6 +14,16 @@ const Footer: React.FC = () => {
             We specialize in residential & commercial interior solutions with
             quality and elegance.
           </p>
+          <div style={{ margin: "30px 0px" }}>
+            <a
+              href="/brochure/Purvika-Brochure.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="brochure-btn"
+            >
+              View Brochure →
+            </a>
+          </div>
         </div>
 
         {/* COMMERCIAL DESIGN */}
