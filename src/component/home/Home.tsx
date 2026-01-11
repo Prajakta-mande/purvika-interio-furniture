@@ -163,7 +163,7 @@ We aspire for our customers to experience warmth, comfort, respect, and trust in
                 alt="Founder"
                 className="founder-img"
               />
-              <h3>Sandesh A. Pisalkar</h3>
+              <h3>Sandesh A. Pisolkar</h3>
               <p style={{ color: "white" }}>Founder & Entrepreneur</p>
               <div className="vision-box">
                 <p
