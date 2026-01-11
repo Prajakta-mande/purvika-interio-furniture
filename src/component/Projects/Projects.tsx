@@ -89,65 +89,50 @@ const Projects: React.FC = () => {
         {/* ===== SHOWCASE GALLERY ===== */}
         <div className="office-gallery">
           <div className="gallery-item imghover">
-            <img
-              src="/images/OfficeFurniture/office1.jpg"
-              alt="Office Furniture 1"
-            />
+            <img src="/images/Projects/project1.jpg" alt="Office Furniture 1" />
           </div>
 
           <div className="gallery-item imghover">
-            <img
-              src="/images/OfficeFurniture/office2.jpg"
-              alt="Office Furniture 2"
-            />
+            <img src="/images/Projects/project2.jpg" alt="Office Furniture 2" />
           </div>
 
           <div className="gallery-item imghover">
-            <img
-              src="/images/OfficeFurniture/office3.jpg"
-              alt="Office Furniture 3"
-            />
+            <img src="/images/Projects/project3.jpg" alt="Office Furniture 3" />
           </div>
 
           <div className="gallery-item imghover">
-            <img
-              src="/images/OfficeFurniture/office4.jpg"
-              alt="Office Furniture 4"
-            />
+            <img src="/images/Projects/project4.jpg" alt="Office Furniture 4" />
           </div>
         </div>
         <div className="office-gallery">
           <div className="gallery-item imghover">
             <img
-              src="/images/OfficeFurniture/office1.jpg"
+              src="/images/Projects/project10.jpeg"
               alt="Office Furniture 1"
             />
           </div>
 
           <div className="gallery-item imghover">
-            <img
-              src="/images/OfficeFurniture/office2.jpg"
-              alt="Office Furniture 2"
-            />
+            <img src="/images/Projects/project5.jpg" alt="Office Furniture 2" />
           </div>
 
           <div className="gallery-item imghover">
             <img
-              src="/images/OfficeFurniture/office3.jpg"
+              src="/images/Projects/project6.jpeg"
               alt="Office Furniture 3"
             />
           </div>
 
           <div className="gallery-item imghover">
             <img
-              src="/images/OfficeFurniture/office4.jpg"
+              src="/images/Projects/project8.jpeg"
               alt="Office Furniture 4"
             />
           </div>
         </div>
       </section>
       <div className="enquire-btn-wrapper">
-        <NavLink to="/contact" className="enquire-btn">
+        <NavLink to="/Contact/contact" className="enquire-btn">
           Enquire Now <span>→</span>
         </NavLink>
       </div>

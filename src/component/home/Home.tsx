@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "./Home.css";
 //import { motion } from "framer-motion";
 import Gallery from "../gallery/Gallery";
+import { NavLink } from "react-router-dom";
 const slides = [
   {
     image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36",
@@ -216,6 +217,11 @@ We aspire for our customers to experience warmth, comfort, respect, and trust in
       {/* ************************ Gallery Section************ */}
       <Gallery />
       {/* ************************ End of Gallery Section************ */}
+      <div className="enquire-btn-wrapper">
+        <NavLink to="/Contact/contact" className="enquire-btn">
+          Enquire Now <span>→</span>
+        </NavLink>
+      </div>
     </div>
   );
 };

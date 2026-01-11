@@ -64,7 +64,7 @@ const ModularOfficeFurniture: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/OfficeFurniture/office1.jpg"
+              src="/images/OfficeFurniture/office5.jpeg"
               alt="Office Furniture 1"
             />
           </div>
@@ -73,7 +73,7 @@ const ModularOfficeFurniture: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/OfficeFurniture/office2.jpg"
+              src="/images/OfficeFurniture/office6.jpeg"
               alt="Office Furniture 2"
             />
           </div>
@@ -82,7 +82,7 @@ const ModularOfficeFurniture: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/OfficeFurniture/office3.jpg"
+              src="/images/OfficeFurniture/office7.jpeg"
               alt="Office Furniture 3"
             />
           </div>
@@ -91,7 +91,7 @@ const ModularOfficeFurniture: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/OfficeFurniture/office4.jpg"
+              src="/images/OfficeFurniture/office8.jpeg"
               alt="Office Furniture 4"
             />
           </div>
@@ -139,7 +139,7 @@ const ModularOfficeFurniture: React.FC = () => {
       </div>
 
       <div className="enquire-btn-wrapper">
-        <NavLink to="/contact" className="enquire-btn">
+        <NavLink to="/Contact/contact" className="enquire-btn">
           Enquire Now <span>→</span>
         </NavLink>
       </div>

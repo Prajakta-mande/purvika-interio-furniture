@@ -56,8 +56,10 @@ const App = () => {
         />
 
         {/* OTHER */}
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/Projects/projects" element={<Projects />} />
+        <Route path="/Contact/contact" element={<Contact />} />
+        {/* <Route path="/Projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} /> */}
       </Routes>
 
       <Footer />

@@ -3,11 +3,11 @@ import "./Gallery.css";
 // import { style } from "framer-motion/client";
 
 const galleryImages = [
-  "/images/gallery1.jpg",
-  "/images/gallery2.jpg",
-  "/images/gallery3.jpg",
-  "/images/gallery4.jpg",
-  "/images/gallery5.jpg",
+  "/images/residential/bedroom13.jpeg",
+  "images/residential/kitchen12.jpg",
+  "images/residential/kitchen10.jpg",
+  "/images/residential/bedroom13.jpeg",
+  "/images/residential/livingroom8.jpg",
 ];
 
 const Gallery: React.FC = () => {

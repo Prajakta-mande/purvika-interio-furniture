@@ -3,6 +3,7 @@ import "./About.css";
 import Client from "./client";
 import Testimonial from "./Testimonial";
 import CertificationSlider from "./CertificationSlider";
+import { NavLink } from "react-router-dom";
 
 const About = () => {
   return (
@@ -126,6 +127,11 @@ const About = () => {
       {/* *************CertificationSlider********************** */}
       <CertificationSlider />
       {/* *************end of CertificationSlider********************** */}
+      <div className="enquire-btn-wrapper">
+        <NavLink to="/Contact/contact" className="enquire-btn">
+          Enquire Now <span>→</span>
+        </NavLink>
+      </div>
     </>
   );
 };

@@ -1,56 +1,148 @@
-
-
+/* ================= GLOBAL GALLERY STYLING ================= */
 .office-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  /* Use auto-fill to maintain consistent sizing on laptops */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 35px; /* Increased gap to give hover borders more room */
   margin-top: 60px;
-}
-
-.gallery-item {
-  overflow: hidden;
-  border-radius: 6px;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.gallery-item img:hover {
-  transform: scale(1.05);
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .about-container {
-    flex-direction: column;
-  }
-
-  /* .div-right h1 {
-    font-size: 28px;
-  } */
+  padding: 0 20px;
 }
 
 .gallery-card {
   display: flex;
   flex-direction: column;
+  background: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* 🔥 THE BOX: Added internal padding so the border shows completely */
+.gallery-item.imghover {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #fff;
+  padding: 20px 24px; /* 🔥 This creates the gap between the image and the border */
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* 🔥 HOVER EFFECT: Restricted to the image box */
+.gallery-item.imghover:hover {
+  z-index: 10; /* Brings it to the front */
+  border: 2px solid #ff7a18; /* Full Orange Border */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.gallery-item.imghover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item.imghover:hover img {
+  transform: scale(1.05);
 }
 
 .gallery-caption {
   margin-top: 15px;
   text-align: center;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: #333;
   transition: color 0.3s ease;
 }
 
-/* Theme hover effect */
 .gallery-card:hover .gallery-caption {
   color: #ff7a18;
 }
 
+/* ================= DIV RIGHT: TEXT RESPONSIVENESS ================= */
+.div-right {
+  flex: 1;
+  padding-left: 40px;
+}
 
+.div-title {
+  font-size: 14px;
+  color: #ff7a18;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.div-right h1 {
+  font-size: 38px;
+  color: #333;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.div-right h1 span {
+  color: #ff7a18;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* ================= RESPONSIVE BREAKPOINTS ================= */
+
+@media (max-width: 1024px) {
+  .div-right h1 { font-size: 30px; }
+  .office-gallery { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 900px) {
+  .about-container { flex-direction: column; text-align: center; }
+  .div-right { padding-left: 0; margin-top: 30px; }
+  .description { text-align: center; }
+}
+
+/* ================= MOBILE PORTRAIT FIX (320px - 480px) ================= */
+@media (max-width: 480px) {
+  .about-section { padding: 20px 0px !important; }
+  
+  .office-gallery {
+    grid-template-columns: 1fr !important; 
+    gap: 20px; 
+    padding: 0 10px;
+    /* Added to prevent the grid itself from overflowing */
+    overflow-x: hidden; 
+  }
+
+  .gallery-item.imghover {
+    padding: 10px; /* Reduced further to give image more room */
+    aspect-ratio: auto !important;
+    z-index: 1 !important;
+  }
+
+  /* KEY CHANGE HERE */
+  .gallery-item.imghover img {
+    width: 100% !important;     /* Force it to fill the container width */
+    max-width: 100% !important; /* Ensure it never goes wider than the screen */
+    height: auto !important;    /* Maintain aspect ratio */
+    object-fit: contain !important; 
+    display: block;             /* Removes bottom whitespace gap */
+  }
+
+  .gallery-card {
+    width: 100%;               /* Ensure the card fills the grid column */
+    box-sizing: border-box;
+  }
+
+  .div-right h1 { font-size: 24px !important; }
+  .description { text-align: left; }
+}

@@ -9,8 +9,17 @@ const ModularOfficeFurniture: React.FC = () => {
       <div className="about-container">
         {/* LEFT IMAGE */}
 
+        <div className="about-left">
+          <div className="image-wrapper imghover">
+            <img
+              src="/images/OfficeFurniture/office1.jpg"
+              alt="Modular Office Furniture"
+            />
+          </div>
+        </div>
+
         {/* RIGHT CONTENT */}
-        <div className="about-right">
+        <div className="div-right">
           <p className="div-title">TURNKEY SOLUTION</p>
 
           <h1>
@@ -54,16 +63,6 @@ const ModularOfficeFurniture: React.FC = () => {
             process is optimized for speed, allowing you to move into your new,
             fully functional workspace as soon as possible.
           </p>
-          <p className="description">
-            At Purvika Interio, our commitment is to deliver expertly planned
-            interiors that remain faithful to your brand identity and functional
-            requirements. We combine our expertise in modular office furniture
-            with full-scale interior execution to create "Smart & Modern
-            Workspaces" that inspire productivity. By trusting us with your
-            turnkey project, you are choosing a partner dedicated to precision,
-            transparency, and excellence, ensuring that your commercial space is
-            ready for business the moment we hand over the keys.
-          </p>
         </div>
       </div>
 
@@ -106,6 +105,7 @@ const ModularOfficeFurniture: React.FC = () => {
           <p className="gallery-caption">Turnkey Office Solution</p>
         </div>
       </div>
+
       <div className="office-gallery">
         <div className="gallery-card">
           <div className="gallery-item imghover">
@@ -146,7 +146,7 @@ const ModularOfficeFurniture: React.FC = () => {
       </div>
 
       <div className="enquire-btn-wrapper">
-        <NavLink to="/contact" className="enquire-btn">
+        <NavLink to="/Contact/contact" className="enquire-btn">
           Enquire Now <span>→</span>
         </NavLink>
       </div>

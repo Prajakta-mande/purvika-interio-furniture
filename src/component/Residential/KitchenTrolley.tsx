@@ -116,7 +116,7 @@ const KitchenTrolley: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/residential/kitchen6.png"
+              src="/images/residential/kitchen11.jpg"
               alt="kitchen Trolley Furniture"
             />
           </div>
@@ -125,7 +125,7 @@ const KitchenTrolley: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/residential/kitchen1.png"
+              src="/images/residential/kitchen10.jpg"
               alt="kitchen Trolley Furniture"
             />
           </div>
@@ -134,7 +134,7 @@ const KitchenTrolley: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/residential/kitchen2.png"
+              src="/images/residential/kitchen9.jpg"
               alt="kitchen Trolley Furniture"
             />
           </div>
@@ -143,7 +143,7 @@ const KitchenTrolley: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/residential/kitchen3.png"
+              src="/images/residential/kitchen12.jpg"
               alt="kitchen Trolley Furniture"
             />
           </div>
@@ -152,7 +152,7 @@ const KitchenTrolley: React.FC = () => {
       </div>
 
       <div className="enquire-btn-wrapper">
-        <NavLink to="/contact" className="enquire-btn">
+        <NavLink to="/Contact/contact" className="enquire-btn">
           Enquire Now <span>→</span>
         </NavLink>
       </div>

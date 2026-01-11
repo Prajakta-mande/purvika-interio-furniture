@@ -106,7 +106,7 @@ const Chair: React.FC = () => {
       </div>
 
       <div className="enquire-btn-wrapper">
-        <NavLink to="/contact" className="enquire-btn">
+        <NavLink to="/Contact/contact" className="enquire-btn">
           Enquire Now <span>→</span>
         </NavLink>
       </div>

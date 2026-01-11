@@ -72,7 +72,7 @@ const Bedroom: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/residential/bedroom2.png"
+              src="/images/residential/bedroom14.jpeg"
               alt="Bedroom Furniture"
             />
           </div>
@@ -81,7 +81,7 @@ const Bedroom: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/residential/bedroom3.png"
+              src="/images/residential/bedroom15.jpeg"
               alt="Bedroom Furniture"
             />
           </div>
@@ -90,7 +90,7 @@ const Bedroom: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/residential/bedroom4.png"
+              src="/images/residential/bedroom12.jpg"
               alt="Bedroom Furniture"
             />
           </div>
@@ -99,7 +99,7 @@ const Bedroom: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/residential/bedroom5.png"
+              src="/images/residential/bedroom13.jpeg"
               alt="Bedroom Furniture"
             />
           </div>
@@ -111,7 +111,7 @@ const Bedroom: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/residential/bedroom6.png"
+              src="/images/residential/bedroom9.jpg"
               alt="Bedroom Furniture"
             />
           </div>
@@ -120,7 +120,7 @@ const Bedroom: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/residential/bedroom1.png"
+              src="/images/residential/bedroom10.jpg"
               alt="Bedroom Furniture"
             />
           </div>
@@ -129,7 +129,7 @@ const Bedroom: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/residential/bedroom2.png"
+              src="/images/residential/bedroom11.jpg"
               alt="Bedroom Furniture"
             />
           </div>
@@ -138,7 +138,7 @@ const Bedroom: React.FC = () => {
         <div className="gallery-card">
           <div className="gallery-item imghover">
             <img
-              src="/images/residential/bedroom3.png"
+              src="/images/residential/bedroom12.jpg"
               alt="Bedroom Furniture"
             />
           </div>
@@ -147,7 +147,7 @@ const Bedroom: React.FC = () => {
       </div>
 
       <div className="enquire-btn-wrapper">
-        <NavLink to="/contact" className="enquire-btn">
+        <NavLink to="/Contact/contact" className="enquire-btn">
           Enquire Now <span>→</span>
         </NavLink>
       </div>

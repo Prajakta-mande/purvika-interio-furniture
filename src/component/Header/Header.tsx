@@ -6,18 +6,38 @@ const Header = () => {
   const [sticky, setSticky] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
-
   useEffect(() => {
-    const onScroll = () => setSticky(window.scrollY > 80);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
+    if (mobileOpen) {
+      // Add padding to prevent the jump when scrollbar disappears
+      const scrollBarWidth =
+        window.innerWidth - document.documentElement.clientWidth;
+      document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = `${scrollBarWidth}px`;
+    } else {
+      document.body.style.overflow = "auto";
+      document.body.style.paddingRight = "0px";
+    }
+  }, [mobileOpen]);
+  useEffect(() => {
+    const handleScroll = () => {
+      setSticky(window.scrollY > 60);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden"; // stop scroll lag
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [mobileOpen]);
 
   const toggleMenu = (menu: string) => {
-    setOpenMenu(openMenu === menu ? null : menu);
+    setOpenMenu((prev) => (prev === menu ? null : menu));
   };
 
-  const closeMobileMenu = () => {
+  const closeAll = () => {
     setMobileOpen(false);
     setOpenMenu(null);
   };
@@ -28,7 +48,7 @@ const Header = () => {
       <div className="top-bar">
         <div className="brand">
           <img src="/images/logo.png" alt="Purvika Interio" />
-          <div className="logo-text">
+          <div className="brand-text">
             <h1>PURVIKA INTERIO</h1>
             <p>Innovative Concepts... Creative Design</p>
           </div>
@@ -36,11 +56,11 @@ const Header = () => {
 
         <div className="top-info">
           <div>
-            <small>Call Us:</small>
-            <strong>+91-9422258307</strong>
+            <small>Call Us</small>
+            <strong>+91 9422258307</strong>
           </div>
           <div>
-            <small>Email:</small>
+            <small>Email</small>
             <strong>purvikainterio@gmail.com</strong>
           </div>
         </div>
@@ -54,13 +74,13 @@ const Header = () => {
 
         <ul className={`nav-links ${mobileOpen ? "open" : ""}`}>
           <li>
-            <NavLink to="/home" onClick={closeMobileMenu}>
+            <NavLink to="/home" onClick={closeAll}>
               Home
             </NavLink>
           </li>
 
           <li>
-            <NavLink to="/about" onClick={closeMobileMenu}>
+            <NavLink to="/about" onClick={closeAll}>
               About Us
             </NavLink>
           </li>
@@ -77,35 +97,32 @@ const Header = () => {
             >
               <li>
                 <NavLink
-                  to="/commercial/modular-office-furniture"
-                  onClick={closeMobileMenu}
+                  to="/Commercial/modular-office-furniture"
+                  onClick={closeAll}
                 >
                   Modular Office Furniture
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/commercial/institutional-office-furniture"
-                  onClick={closeMobileMenu}
+                  to="/Commercial/Institutional-office-furniture"
+                  onClick={closeAll}
                 >
                   Institutional
                 </NavLink>
               </li>
               <li>
-                <NavLink
-                  to="/commercial/turnkey-solution"
-                  onClick={closeMobileMenu}
-                >
+                <NavLink to="/Commercial/Turnkey-Solution" onClick={closeAll}>
                   Turnkey Solutions
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/commercial/sofa" onClick={closeMobileMenu}>
+                <NavLink to="/Commercial/Sofa" onClick={closeAll}>
                   Sofa
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/commercial/chair" onClick={closeMobileMenu}>
+                <NavLink to="/Commercial/Chair" onClick={closeAll}>
                   Chair
                 </NavLink>
               </li>
@@ -123,23 +140,17 @@ const Header = () => {
               }`}
             >
               <li>
-                <NavLink
-                  to="/residential/living-room"
-                  onClick={closeMobileMenu}
-                >
-                  Living Room Interior
+                <NavLink to="/Residential/living-room" onClick={closeAll}>
+                  Living Room
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/residential/bedroom" onClick={closeMobileMenu}>
-                  Bedroom Interior
+                <NavLink to="/Residential/Bedroom" onClick={closeAll}>
+                  Bedroom
                 </NavLink>
               </li>
               <li>
-                <NavLink
-                  to="/residential/kitchen-trolley"
-                  onClick={closeMobileMenu}
-                >
+                <NavLink to="/Residential/kitchen-trolley" onClick={closeAll}>
                   Kitchen Trolleys
                 </NavLink>
               </li>
@@ -147,13 +158,13 @@ const Header = () => {
           </li>
 
           <li>
-            <NavLink to="/projects" onClick={closeMobileMenu}>
+            <NavLink to="/Projects/projects" onClick={closeAll}>
               Projects
             </NavLink>
           </li>
 
           <li>
-            <NavLink to="/contact" onClick={closeMobileMenu}>
+            <NavLink to="/Contact/contact" onClick={closeAll}>
               Contact
             </NavLink>
           </li>
@@ -162,7 +173,7 @@ const Header = () => {
         <a
           href="/brochure/Purvika-Brochure.pdf"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
           className="brochure-btn"
         >
           View Brochure →
