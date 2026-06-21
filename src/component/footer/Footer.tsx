@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
       <div className="footer-bottom social-icons">
         <p>
           © {new Date().getFullYear()} Purvika Interio. All Rights Reserved.
-          Developed by <span>Prajakta Mande</span>
+          Developed by <span>Prajakta Thombare</span>
         </p>
 
         {/* SOCIAL ICONS */}
