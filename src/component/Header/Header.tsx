@@ -171,7 +171,7 @@ const Header = () => {
         </ul>
 
         <a
-          href="/brochure/Purvika-Brochure.pdf"
+          href="/brochure/Broucher-Purvika-interio.pdf"
           target="_blank"
           rel="noreferrer"
           className="brochure-btn"
